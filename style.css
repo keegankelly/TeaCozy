@@ -1,8 +1,62 @@
-body {}
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  background-color: black;
+  color: seashell;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
 
-header {}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: nowrap;
+  position: fixed;
+  width: 100%;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  opacity: 1;
+  background-color: black;
+}
 
-.logo {}
+header span {
+  text-decoration: underline;
+  color: seashell;
+  align-self: flex-end;
+}
+
+header a {
+  color: seashell;
+}
+
+nav {
+  display: inline-block;
+  align-self: center;
+  font-size: 22px;
+  margin-right: 30px;
+}
+
+nav span {
+  padding: 20px 10px;
+}
+
+.logo {
+  height: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.logo img {
+  height: 50px;
+  align-self: flex-start;
+}
 
 #mission {}
 
@@ -10,19 +64,66 @@ header {}
 
 #locations {}
 
-.content {}
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding-top: 80px;
+}
 
-.mission {}
+.mission {
+  background-image: url("/Users/keegankelly/Documents/projects/TeaCozy/mission-background.jpg");
+  width: 1200px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
 
-.mission-banner {}
+.mission-banner {
+  background-color: black;
+  width: 100%;
+}
 
-.heading {}
+.heading {
+  margin: 5px;
+  padding: 0px;
+}
 
-.sub-heading {}
+.sub-heading {
+  margin: 10px;
+  padding: 0px;
+}
 
-.totm {}
+.totm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  width: 1000px;
+}
 
-.tea-img {}
+.tea-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 1000px;
+}
+
+.tea-img {
+  width: 300px;
+  height: 200px;
+  margin: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 .tea.fall {}
 
@@ -34,22 +135,69 @@ header {}
 
 .tea.bedford {}
 
-.locations {}
+.locations {
+  background-image: url("/Users/keegankelly/Documents/projects/TeaCozy/locations-background.jpg");
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 
+#location-heading {
+  width: 100%;
+  margin-bottom: 15px;
+}
 .city {}
 
-.address {}
+.address {
+  font-size: 24px;
+  font-weight: normal;
+}
 
-.downtown {}
+.downtown {
+  background-color: black;
+  height: 300px;
+  width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 1;
+}
 
-.bayside {}
+.bayside {
+  background-color: black;
+  height: 300px;
+  width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 1;
+}
 
-.oakdale {}
+.oakdale {
+  background-color: black;
+  height: 300px;
+  width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 1;
+}
 
-footer {}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
 
 .contact {}
 
 .contact-info {}
 
-.contact-copyright {}
+.contact-copyright {
+  align-self: flex-start;
+  margin-left: 20px;
+}
